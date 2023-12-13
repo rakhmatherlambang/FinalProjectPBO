@@ -32,8 +32,10 @@ public class LogInUserController {
     private TextField tfUsername;
     
     Connection conn = null;
-    ResultSet rs = null;
-    PreparedStatement pst = null;
+    ResultSet rsp = null;
+    ResultSet rsa = null; 
+    PreparedStatement pstp = null;
+    PreparedStatement psta = null;
     
     @FXML
     void backUserButton(ActionEvent event) throws IOException {
@@ -53,19 +55,34 @@ public class LogInUserController {
     @FXML
     void LoginDataButton(ActionEvent event)throws Exception{
         conn = DBHelper.getConnection();
-        String sql="Select * from pelanggan WHERE username = ? and password = ? ";
+        String sqlp="SELECT * from pelanggan WHERE username = ? and password = ? ";
+        String sqla="SELECT * from admin WHERE username = ? and password = ? ";
         try{
-            pst = conn.prepareStatement(sql);
-            pst.setString(1, tfUsername.getText());
-            pst.setString(2, tfPassword.getText());
-            rs = pst.executeQuery();
-            if(rs.next()){
+            pstp = conn.prepareStatement(sqlp);
+            pstp.setString(1, tfUsername.getText());
+            pstp.setString(2, tfPassword.getText());
+            rsp = pstp.executeQuery();
+            
+            psta = conn.prepareStatement(sqla);
+            psta.setString(1, tfUsername.getText());
+            psta.setString(2, tfPassword.getText());
+            rsa = psta.executeQuery();            
+            if(rsp.next()){
                 System.out.println("benar");
                 Parent root = FXMLLoader.load(getClass().getResource("HalPertamaUser.fxml"));
                 Scene scene = new Scene(root);  
                 Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(scene);
                 stage.show();
+            }else if(rsa.next()){
+                System.out.println("benar");
+                Parent root = FXMLLoader.load(getClass().getResource("StartUser.fxml"));
+                Scene scene = new Scene(root);  
+                Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();               
+                
+                
             }else{
               JOptionPane.showMessageDialog(null,"Username atau Password Salah");
             }

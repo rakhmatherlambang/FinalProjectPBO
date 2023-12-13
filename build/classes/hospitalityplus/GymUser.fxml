@@ -6,16 +6,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1146.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.GymUserController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.GymUserController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="930.0" prefWidth="430.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1146.0" prefWidth="430.0">
          <children>
             <ImageView fitHeight="1146.0" fitWidth="430.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/GYMuser.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnBack" layoutX="26.0" layoutY="83.0" mnemonicParsing="false" onAction="#BackGymUser" opacity="0.0" prefHeight="40.0" prefWidth="49.0" text="Button" />
+            <Button fx:id="btnBack" layoutX="22.0" layoutY="81.0" mnemonicParsing="false" onAction="#BackGymUser" opacity="0.0" prefHeight="40.0" prefWidth="49.0" text="Button" />
             <Button fx:id="btnBayar" layoutX="259.0" layoutY="1042.0" mnemonicParsing="false" onAction="#BayarGymUser" opacity="0.0" prefHeight="55.0" prefWidth="156.0" text="Button" />
          </children></AnchorPane>
   </content>
