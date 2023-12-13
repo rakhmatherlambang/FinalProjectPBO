@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="902.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.SignUpUserController">
+   <children>
+      <ImageView fitHeight="932.0" fitWidth="430.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Sign%20upuser.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfEmail" layoutX="70.0" layoutY="251.0" prefHeight="25.0" prefWidth="323.0" promptText="Email" />
+      <TextField fx:id="tfUsername" layoutX="70.0" layoutY="344.0" prefHeight="25.0" prefWidth="323.0" promptText="Username" />
+      <PasswordField fx:id="tfPassword" layoutX="70.0" layoutY="441.0" prefHeight="25.0" prefWidth="323.0" promptText="Password" />
+      <Button fx:id="btnSignup" layoutX="61.0" layoutY="540.0" mnemonicParsing="false" onAction="#SignupDataButton" opacity="0.0" prefHeight="54.0" prefWidth="323.0" text="signup" />
+      <Button fx:id="btnTologin" layoutX="254.0" layoutY="819.0" mnemonicParsing="false" onAction="#TologinUserButton" opacity="0.0" text="toLogin" />
+
+      <Button fx:id="btnBackUser" layoutX="30.0" layoutY="68.0" mnemonicParsing="false" onAction="#backUserButton" opacity="0.0" prefHeight="31.0" prefWidth="48.0" text="Button" />
+   </children>
+</AnchorPane>
