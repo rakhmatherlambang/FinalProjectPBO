@@ -16,6 +16,9 @@ public class HalPertamaUserController {
 
     @FXML
     private Button btnKamar;
+    
+    @FXML
+    private Button btnLogout;
 
     @FXML
     void PilihFasilitas(ActionEvent event) throws IOException {
@@ -30,6 +33,14 @@ public class HalPertamaUserController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("PemilihanKamarUser.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage)btnKamar.getScene().getWindow();
+        stage.setScene(new Scene(root));
+    }
+    
+    @FXML
+    void ButtonLogout(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("StartUser.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnLogout.getScene().getWindow();
         stage.setScene(new Scene(root));
     }
 

@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="hospitalityplus.SpaUserController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.SpaUserController">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1207.0" prefWidth="430.0">
          <children>
@@ -16,6 +16,7 @@
                </image>
             </ImageView>
             <Button fx:id="btnBack" layoutX="21.0" layoutY="88.0" mnemonicParsing="false" onAction="#BackSpa" opacity="0.0" prefHeight="41.0" prefWidth="54.0" text="Button" />
+            <Button fx:id="btnBayar" layoutX="259.0" layoutY="1098.0" mnemonicParsing="false" onAction="#BayarSpa" opacity="0.0" prefHeight="45.0" prefWidth="160.0" text="Button" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

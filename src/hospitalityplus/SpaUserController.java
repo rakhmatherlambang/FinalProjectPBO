@@ -26,8 +26,11 @@ public class SpaUserController {
     }
 
     @FXML
-    void BayarSpa(ActionEvent event) {
-
+    void BayarSpa(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ConfirmPaySpa.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnBayar.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
 }

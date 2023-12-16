@@ -28,8 +28,11 @@ public class GymUserController {
     }
 
     @FXML
-    void BayarGymUser(ActionEvent event) {
-
+    void BayarGymUser(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ConfirmPayGym.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnBayar.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
     
 

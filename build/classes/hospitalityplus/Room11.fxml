@@ -6,17 +6,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="945.0" prefWidth="385.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.Room11Controller">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="945.0" prefWidth="349.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1218.0" prefWidth="430.0">
          <children>
-            <ImageView fitHeight="932.0" fitWidth="430.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1218.0" fitWidth="430.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Room%2011user.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnBack" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#Back11" prefHeight="38.0" prefWidth="51.0" text="Button" />
-            <Button fx:id="btnBayar" layoutX="185.0" layoutY="862.0" mnemonicParsing="false" onAction="#Bayar11" prefHeight="41.0" prefWidth="151.0" text="Button" />
+            <Button fx:id="btnBack" layoutX="20.0" layoutY="88.0" mnemonicParsing="false" onAction="#Back11" opacity="0.0" prefHeight="38.0" prefWidth="51.0" text="Button" />
+            <Button fx:id="btnBayar" layoutX="256.0" layoutY="1122.0" mnemonicParsing="false" onAction="#Bayar11" opacity="0.0" prefHeight="41.0" prefWidth="151.0" text="Button" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

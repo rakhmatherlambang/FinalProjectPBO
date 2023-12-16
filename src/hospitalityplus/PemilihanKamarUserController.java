@@ -32,8 +32,11 @@ public class PemilihanKamarUserController {
     }
 
     @FXML
-    void DeluxeUser(ActionEvent event) {
-
+    void DeluxeUser(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("DeluxeRoomUser.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnDeluxe.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
     @FXML
@@ -45,8 +48,11 @@ public class PemilihanKamarUserController {
     }
 
     @FXML
-    void SuperiorUser(ActionEvent event) {
-
+    void SuperiorUser(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SuperiorRoomUser.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnSuperior.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
 }

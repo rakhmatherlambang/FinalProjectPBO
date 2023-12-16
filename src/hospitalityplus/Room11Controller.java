@@ -1,27 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hospitalityplus;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import java.io.IOException;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author rakhm
- */
-public class Room11Controller implements Initializable {
+public class Room11Controller {
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+    @FXML
+    private Button btnBack;
+
+    @FXML
+    private Button btnBayar;
+
+    @FXML
+    void Back11(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("StandardRoomUser.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnBack.getScene().getWindow();
+        stage.setScene(new Scene(root));
+    }
+
+    @FXML
+    void Bayar11(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Room11CP.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnBayar.getScene().getWindow();
+        stage.setScene(new Scene(root));
+    }
+
 }

@@ -27,6 +27,9 @@ public class LogInUserController {
 
     @FXML
     private PasswordField tfPassword;
+    
+    @FXML
+    private Button btnLupa;
 
     @FXML
     private TextField tfUsername;
@@ -39,15 +42,23 @@ public class LogInUserController {
     
     @FXML
     void backUserButton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StartUser.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SignUpUser.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage)btnLogin.getScene().getWindow();
+        stage.setScene(new Scene(root));
+    }
+    
+    @FXML
+    void buttonLupa(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LupaPasswordUser.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btnLupa.getScene().getWindow();
         stage.setScene(new Scene(root));
     }
 
     @FXML
     void TosignupUserButton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StartUser.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SignUpUser.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage)btnTosignup.getScene().getWindow();
         stage.setScene(new Scene(root));
@@ -76,7 +87,7 @@ public class LogInUserController {
                 stage.show();
             }else if(rsa.next()){
                 System.out.println("benar");
-                Parent root = FXMLLoader.load(getClass().getResource("StartUser.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("AdminHalPertama.fxml"));
                 Scene scene = new Scene(root);  
                 Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
                 stage.setScene(scene);

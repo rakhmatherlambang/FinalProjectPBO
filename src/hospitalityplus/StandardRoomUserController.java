@@ -32,18 +32,27 @@ public class StandardRoomUserController {
     }
 
     @FXML
-    void Room11(ActionEvent event) {
-
+    void Room11(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Room11.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btn11.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
     @FXML
-    void Room12(ActionEvent event) {
-
+    void Room12(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Room12.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btn12.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
     @FXML
-    void Room13(ActionEvent event) {
-
+    void Room13(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Room13.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage)btn13.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 
 }

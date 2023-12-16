@@ -19,5 +19,6 @@
       <Button fx:id="btnLogin" layoutX="59.0" layoutY="505.0" mnemonicParsing="false" onAction="#LoginDataButton" opacity="0.0" prefHeight="55.0" prefWidth="319.0" text="Button" />
       <Button fx:id="btnTosignup" layoutX="244.0" layoutY="803.0" mnemonicParsing="false" onAction="#TosignupUserButton" opacity="0.0" prefHeight="25.0" prefWidth="65.0" text="Button" />
       <Button fx:id="btnBackUser" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#backUserButton" opacity="0.0" text="Button" />
+      <Button fx:id="btnLupa" layoutX="257.0" layoutY="445.0" mnemonicParsing="false" onAction="#buttonLupa" opacity="0.0" prefHeight="25.0" prefWidth="107.0" text="Button" />
    </children>
 </AnchorPane>
